@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body
+        {
+            margin: 0%;
+            padding: 0%;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            min-height: 100vh;
+            background-color: snow;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        a
+        {
+            position: relative;
+            text-decoration: none;
+            font-size: 30px;
+            transition: 0.2s;
+        }
+        a:hover
+        {
+            background-color: silver;
+            transition-delay: 0.2s;
+            box-shadow: none;
+        }
+        a  span
+        {
+            position: relative;
+            display: block;
+        }
+        a span:nth-child(1)
+        {
+            left: -100%;
+            top: 0px;
+            height: 2px;
+            width: 150px;
+            background: linear-gradient(90deg,transparent,rgb(152, 61, 236));
+        }
+        a:hover span:nth-child(1)
+        {
+            left: 100%;
+            transition: 0.5s;
+        }
+        a span:nth-child(2)
+        {
+            right: -100%;
+            bottom: 0;
+            height: 2px;
+            width: 100%;
+            background: linear-gradient(270deg,transparent,rgb(152, 61, 236));
+        }
+        a:hover span:nth-child(2)
+        {
+            right: 100%;
+            transition: 0.5s;
+        }
+    </style>
+    <body>
+        <a href="#">
+            <span></span>
+            <span></span>
+          
+            Hello World
+        </a>
+    </body>
+</html>

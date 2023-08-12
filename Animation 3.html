@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <style>
+       *
+        {
+            margin: 0%;
+            padding: 0%;
+        }
+        body
+        {
+            background-color: gray;
+        }
+        .nav
+        {
+            top: 350px;
+            left: 700px;
+            position: absolute;
+            transform: translate(-50%,-50%);
+            
+        }     
+        a
+        {
+            text-decoration: none;
+            padding: 0.1em;
+            color: honeydew;
+            text-align: center;
+            width: 120px;
+            display: inline-block;
+            transition: all 1s ease-in-out;
+        }
+        .line
+        {
+            height: 5px;
+            width: 90px;
+            background-color: lavender;
+        }
+        a:nth-child(2):hover ~.line
+        {
+            transform: translate(140px);
+            transition: all 1s ease-in-out;
+        }
+        a:nth-child(3):hover ~.line
+        {
+            transform: translate(280px);
+            transition: all 1s ease-in-out;
+        }        
+    </style>
+    <body>
+        <div class="nav">           
+            <a href="#">HOME</a>
+            <a href="#">CONTACT US</a>
+            <a href="#">APPLICATONS</a>  
+            <div class="line"></div>         
+        </div>
+    </body>
+</html>
